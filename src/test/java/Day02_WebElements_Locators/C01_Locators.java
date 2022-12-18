@@ -38,6 +38,7 @@ public class C01_Locators {
     public void tearDown(){
 
         // driver imiz kapatildi
+       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
         driver.quit();
     }
 

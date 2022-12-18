@@ -97,7 +97,7 @@ public class C001_Xpath {
         @Test
         public void textNoktaliXpath(){
             // xpath locator -->////button[contains(text(),'Sign in')]
-            WebElement email = driver.findElement(By.xpath("////button[contains(. ,'Sign in')]"));
+            WebElement email = driver.findElement(By.xpath("//button[contains(. ,'Sign in')]"));
             email.sendKeys("Adem multiple xpath kavramini kavradi");
 
         }

@@ -51,14 +51,14 @@ public class C01_Practice {
 
         //Current URL yazdirildi
         String alertsUrl = driver.getCurrentUrl();
-        System.out.println(alertsUrl);
+        System.out.println("alertsUrl = " + alertsUrl);
 
         // back = geri -> bir sayfa geri gelindi
         driver.navigate().back();
 
         // Current URL print edildi
         String homeUrl = driver.getCurrentUrl();
-        System.out.println(homeUrl);
+        System.out.println("homeUrl = " + homeUrl);
 
         // Basic Ajax linki locate edildi ve tiklandi
         WebElement basicAjaxLink = driver.findElement(By.id("basicajax"));
@@ -66,11 +66,13 @@ public class C01_Practice {
 
         // Basic Ajax URL print edildi
         String basicAjaxUrl = driver.getCurrentUrl();
-        System.out.println(basicAjaxUrl);
+        System.out.println("basicAjaxUrl = " + basicAjaxUrl);
+       // System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
 
         //Text alanina 20 yazilip ENTER a basildi
-        driver.findElement(By.id("lteq30")).sendKeys("20" + Keys.ENTER);
-
+       // driver.findElement(By.id("lteq30")).sendKeys("20" + Keys.ENTER);
+WebElement EBİGkABIK= driver.findElement(By.id("lteq30"));
+EBİGkABIK.sendKeys("20" + Keys.ENTER);
         //Submitted Values yazisinin goruntulendigini dogrula
         WebElement submittedValuesText = driver.findElement(By.xpath("//p[text()='Submitted Values']"));
         Assert.assertTrue(submittedValuesText.isDisplayed());
