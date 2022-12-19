@@ -1,4 +1,4 @@
-package Day3_LocatorPractice;
+package Seleniuö_Karl_Hoca.Day3_LocatorPractice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;

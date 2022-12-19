@@ -1,4 +1,4 @@
-package Day4_LocatorPractice;
+package Seleniuö_Karl_Hoca.Day4_LocatorPractice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -38,7 +38,7 @@ public class ODEV01 {
     @After
     public void tearDown() {
         // test sonrasinda driver kapatmak (varsa raporlari dosyalamak) icin kullanilir.
-        driver.quit();
+       // driver.quit();
     }
 
 @Test

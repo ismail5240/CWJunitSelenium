@@ -1,4 +1,4 @@
-package Day02_WebElements_Locators;
+package Seleniuö_Karl_Hoca.Day3_LocatorPractice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -8,10 +8,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.time.Duration;
 import java.util.List;
 
-public class C01_Locators {
+public class C01_Xpath {
+
 
     WebDriver driver;
 
@@ -38,8 +40,7 @@ public class C01_Locators {
     public void tearDown(){
 
         // driver imiz kapatildi
-       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
-        driver.quit();
+        //driver.quit();
     }
 
 
@@ -119,5 +120,31 @@ public class C01_Locators {
         WebElement email = driver.findElement(By.xpath("//input[@name='session_key']"));
         email.sendKeys("Karl relative xpath konusunu gayet basirili tamamladi");
     }
+
+    @Test
+    public void multipleAttributeXpath(){
+        // xpath locator -> //input[@class='input__input'][@name='session_key']
+
+        WebElement email = driver.findElement(By.xpath("//input[@class='input__input'][@name='session_key']"));
+        email.sendKeys("Karl relative xpath konusunu gayet basirili tamamladi");
+    }
+
+    @Test
+    public void andOrXpath(){
+        // xpath locator -> //input[@class='input__input' and @name='session_key']
+
+        WebElement email = driver.findElement(By.xpath("//input[@class='input__input' and @name='session_key']"));
+        email.sendKeys("Karl relative xpath konusunu gayet basirili tamamladi");
+    }
+
+    @Test
+    public void containsXpath(){
+        // xpath locator -> //input[contains(@name, 'key')]
+
+        WebElement email = driver.findElement(By.xpath("//input[contains(@name, 'key')]"));
+        email.sendKeys("Karl relative xpath konusunu gayet basirili tamamladi");
+    }
+
+
 
 }

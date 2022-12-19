@@ -1,4 +1,4 @@
-package Day01_SeleniumMaven;
+package Seleniuö_Karl_Hoca.Day01_SeleniumMaven;
 
 import org.junit.*;
 

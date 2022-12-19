@@ -1,4 +1,4 @@
-package Day01_SeleniumMaven;
+package Seleniuö_Karl_Hoca.Day01_SeleniumMaven;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
