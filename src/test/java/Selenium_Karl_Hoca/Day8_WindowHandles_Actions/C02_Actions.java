@@ -18,6 +18,7 @@ public class C02_Actions extends BaseTest {
         WebElement doubleClickBtn = driver.findElement(By.id("doubleClickBtn"));
 
 
+
         Actions actions = new Actions(driver);
         actions.doubleClick(doubleClickBtn).perform();
 
